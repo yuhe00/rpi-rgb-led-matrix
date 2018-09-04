@@ -1,0 +1,7 @@
+#!/bin/sh
+/home/pi/rpi-rgb-led-matrix/examples-api-use/clock \
+	--led-rows=32 --led-cols=64 --led-chain=2 \
+	--led-slowdown-gpio=1 \
+	-f /home/pi/rpi-rgb-led-matrix/fonts/10x20.bdf \
+	-d %H:%M:%S -x 24 -y 6 -C 255,255,255 -b 100 \
+	--led-daemon
